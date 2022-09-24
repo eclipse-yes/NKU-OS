@@ -7,6 +7,9 @@ gcc main.c -O2 -o cpdir
 trash linux-5.19.10bak
 time ./cpdir -d ./linux-5.19.10 | tee log.txt
 
+# Check whether two dirs are the same.
+# diff -urNa dir1 dir2
+
 # Undone work for dir-copy program
 # 1. unable to copy link file (only able to copy directory and regular file)
 # 2. using too much file handler (unable to execute under ulimit -n 1024)
